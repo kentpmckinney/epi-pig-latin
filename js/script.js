@@ -1,25 +1,12 @@
 function translate(text) {
 
-  // console.log(`translate(${text})`);
-
-  /*
-    For words beginning with a vowel, add "way" to the end.
-    For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
-    If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
-    For words beginning with "y", treat "y" as a consonant.
-  */
-
-  return text.replace(/(?:\b)([^aeiou]*qu[^aeiou]*|[^aeiou]+?)?([aeiouy]+\w*?)(?:\b)/ig, function(match, c1, c2){
-    // console.log(match)
-    // console.log(c1)
-    // console.log(c2)
-    return /^[aeiou]+/i.test(match) ? `${match}way` : `${c2}${c1}ay`;
+  return text.replace(/(?:\b)([^aeiou\s]*qu[^aeiou\s]*|[^aeiou\s]+?)?([aeiouy]+\w*?)(?:\b)/ig, function(m, c1, c2){
+    return /^[aeiou]+/i.test(m) ? `${m}way` : `${c2}${c1}ay`;
   });
  
 }
 
 $(document).ready(function(){
-
 
   $("#form").submit(function(e){
 
@@ -31,6 +18,5 @@ $(document).ready(function(){
     e.preventDefault();
 
   });
-
 
 });
