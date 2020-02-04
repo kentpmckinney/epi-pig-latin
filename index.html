@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-    <script src="js/script.js"></script>
-    <title>Pig Latin Translator</title>
-</head>
-<body>
-    <h1>Pig Latin Translator</h1>
-    <form id="form">
-        <label for="text">Enter a Word: </label>
-        <input id="text"></input>
-        <button type="submit">Translate</button>
-    </form>
-<div id="result"></div>
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+      <title>Pig Latin Translator</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Pig Latin Translator</h1>
+      <div>&nbsp;</div>
+    </header>
+    <main>
+      <div>
+        <form id="form">
+          <div>
+            <label for="text">Enter some text: </label>
+          </div>
+          <div>
+            <textarea id="text"></textarea>
+          </div>
+          <div>
+            <button type="submit">Translate</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>&nbsp;</div>
+      <div id="result"></div>
+    </footer>
+  </body>
 </html>
