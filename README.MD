@@ -7,7 +7,7 @@
 * Program preserves spaces
 * Program preserves non-alphabetical chars
 * Recognizes single letter words
-* Adds "ay" to single letter words beginning with a vowel
+* **Adds "ay" to single letter words beginning with a vowel**
     * Input: i
     * Output: iay
 
