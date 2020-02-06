@@ -1,27 +1,4 @@
-// function translate(text) {
-//   return text.replace(/(?:\b)([^aeiou\s]*qu[^aeiou\s]*|[^aeiou\s]+?)?([aeiouy]+\w*?)(?:\b)/ig, function(m, c1, c2){
-//     return /^[aeiou]+/i.test(m) ? `${m}way` : `${c2}${c1}ay`;
-//   });
-// }
-
-//array for vowels
-//regex for starting vowels
-let startingVowel = /[aeiuo]{1}?/i;
-
 function translate(text) {
-  if ((/[aeiuo]{1}?/i.test(text)) && (text.length ===1)) {
-    return text + "ay";
-  }
-  return text;
-}
-
-function singleVowel(letter) {
-  //test if letter is a vowel
-  //let valid = /[aeiuo]{1}/i.test(letter);
-
-  if (/[aeiuo]{1}/i.test(letter)) {
-    return letter + "ay";
-  }
   /*
     The following RegEx expressions are used to facilitate translation:
     /(?:\b)([^aeiou\s]*qu[^aeiou\s]*|[^aeiou\s]+?)?([aeiouy]+\w*?)(?:\b)/ig
@@ -46,12 +23,7 @@ function singleVowel(letter) {
     else
       return m;
   });
- 
 }
-
-
-
-
 
 $(document).ready(function(){
 
