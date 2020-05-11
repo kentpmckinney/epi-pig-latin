@@ -1,8 +1,23 @@
+<!-- Category: Epicodus;HTML/CSS/JS -->
 
-### Specs
+# Pig Latin Translator
+https://github.com/kentpmckinney/epi-pig-latin
 
-<!-- | Spec | Input | Output |
-| :-------------     | :------------- | :------------- | -->
+##### Author: Kent McKinney - [GitHub](https://github.com/kentpmckinney)
+##### Copyright &copy; 2020 Kent McKinney
+### Description:
+
+``Translates an English phrase to its Pig Latin equivalent``
+
+### Setup Instructions:
+    1. Download a copy of the source code from GitHub from https://github.com/kentpmckinney/epi-pig-latin
+    2. Navigate to the location of the downloaded source files
+    3. Run the file "index.html" in a web browser
+
+### Changelog:
+
+
+### Specifications:
 
 * Program preserves spaces
 * Program preserves non-alphabetical chars
