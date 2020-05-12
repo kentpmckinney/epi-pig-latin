@@ -1,5 +1,5 @@
 <!-- Category: Epicodus;HTML/CSS/JS -->
-# Pig Latin
+# Pig Latin Translator
 
 Translates an English phrase to Pig Latin
 
